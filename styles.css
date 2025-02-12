@@ -1,0 +1,169 @@
+*,*::before,*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 20px;
+    scroll-behavior: smooth;
+}
+:root {
+    --light-color: #F5F5DC;
+    --dark-color: #333333;
+}
+body {
+    font-family: "Poppins", serif;
+    color: var(--dark-color);
+    line-height: 1.6;
+}
+h1, h2, h3, h4 {
+    font-family: "Playfair Display", serif;
+}
+p {
+    margin: 1em 0;
+}
+a {
+    font-family: "Lora", serif;
+}
+header {
+    background-color: var(--dark-color);
+}
+.navbar-brand {
+    color: var(--light-color);
+}
+.navbar-brand:hover, .navbar-brand:visited {
+    color: var(--light-color);
+}
+.nav-link {
+    color: var(--light-color);
+}
+.nav-link::after {
+    content: '';
+    display: block;
+    height: 5px;
+    width: 0;
+    position: relative;
+    top: 0;
+    left: 0;
+    background-color: var(--light-color);
+    transition: all ease-in-out 250ms;
+}
+.nav-link:hover {
+    color: var(--light-color);
+}
+.nav-link:hover::after{
+    width: 100%;
+    color: var(--light-color);
+}
+.navbar-toggler {
+    background-color: var(--light-color);
+    color: var(--light-color);
+}
+.navbar-toggler-icon {
+    background-color: var(--light-color);
+}
+.hero {
+    background-image: url(img/hero\ bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: var(--light-color);
+}
+.btn {
+    font-family: "Lora", serif;
+    color: var(--light-color);
+    background-color: var(--dark-color);
+    animation: sideIN 2s ease-in;
+}
+h1.title {
+    font-size: 6em;
+    width: 80%;
+    animation: sideIN 2s ease-in;
+}
+@keyframes sideIN {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    
+}
+.sub-title {
+    font-size: inherit;
+    width: 60%;
+    font-style: italic;
+}
+.btn:hover {
+    background-color: var(--light-color);
+    color: var(--dark-color);
+}
+.about {
+    background-color: var(--light-color);
+    color: var(--dark-color);
+}
+h2.title {
+    font-size: 4em;
+}
+img {
+    width: 350px;
+}
+.menu {
+    background-color: var(--dark-color);
+    color: var(--light-color);
+}
+.bg-menu {
+    background-color: var(--light-color);
+    color: var(--dark-color);
+}
+#gallery {
+    background-color: var(--light-color);
+    color: var(--dark-color);
+}
+#reviews {
+    background-color: var(--dark-color);
+    color: var(--light-color);
+}
+#reservation {
+    background-color: var(--light-color);
+    color: var(--dark-color);
+}
+footer {
+    background-color: var(--light-color);
+    color: var(--dark-color);
+}
+footer a {
+    text-decoration: none;
+    color: var(--dark-color);
+}
+.me-3 {
+    color: var(--light-color);
+}
+#contact {
+    background-color: var(--dark-color);
+    color: var(--light-color);
+}
+#contact .btn {
+    background-color: var(--light-color);
+    color: var(--dark-color);
+}
+#contact .btn:hover {
+    background-color: var(--dark-color);
+    color: var(--light-color);
+}
+@media (max-width: 768px) {
+    h1.title {
+        font-size: 3em;
+        width: 100%;
+    }
+    p.sub-title {
+        width: 100%;
+    }
+    h2.title {
+        font-size: 2.75em;
+    }
+    img {
+        width: 100%;
+    }
+}
